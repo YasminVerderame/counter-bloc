@@ -21,6 +21,9 @@ class _HomeScreenState extends State<HomeScreen> {
           onIncrementPressed: () {
             context.read<CounterBloc>().add(const IncrementEvent());
           },
+          onDecrementPressed: () {
+            context.read<CounterBloc>().add(const DecrementEvent());
+          },
         );
       },
       listener: (context, state) {
